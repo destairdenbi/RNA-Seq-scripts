@@ -1,0 +1,18 @@
+cat lane2_R2.fastq.gz | fastx_barcode_splitter.pl --bcfile mybarcodes.txt --bol --mismatches 1 --suffix ".fastq"
+
+
+
+/users/sbi00/mw581/Documents/je_1.2/ sh je demultiplex F1=lane2_R2.fastq.gz BF=mybarcodes.txt
+
+sh je demultiplex F1=lane2_R2.fastq.gz BF=mybarcodes.txt
+
+flexbar -r lane2_R2.fastq -t RTC099 -b RTC099.fa 
+
+flexbar -n 8 -r lane3_R1.fastq.gz -p lane3_R3.fastq.gz -b bar.fasta -br lane3_R2.fastq.gz
+
+
+
+
+flexbar -n 16 -r lane2_R1.fastq -t lane2 -b bar_lane2.fasta -br lane2_R2.fastq
+
+flexbar -n 16 -r lane3_R1.fastq.gz -t lane3 -b bar_lane3.fasta -br lane3_R2.fastq.gz

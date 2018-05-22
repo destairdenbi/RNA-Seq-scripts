@@ -1,0 +1,22 @@
+#!/bin/bash
+# RNAseq Script "kallisto in a loop" 180516
+
+echo "start Analysis of RNAseq data loop-wise"
+
+for file in *.fastq
+do
+outname=$(echo $file | sed 's/.fastq/.kallisto/') #various manipulations with sed or tr or cut possible 
+
+# For a proper usage you only have to change the directories of the kallisto binary, the index location and output dir
+# Depending on your system you also may want to change the number of threads -t
+# --single for single-end RNAseq data, -l for 100 bp read length
+
+../kallisto quant -i ../index_GRCh38_cdna_ncRNA -t 24 --single -l 100 -s 20 -b 5  -o ../hg19_mrna/st_results_2/$outname  $file
+
+
+done
+
+echo " put it in a box again - end of analysis "
+
+
+

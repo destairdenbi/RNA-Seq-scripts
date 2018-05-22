@@ -1,0 +1,43 @@
+#!/bin/bash
+# RNAseq Script "kallisto " 171027
+
+echo "start Analysis of perfect RNAseq data"
+
+echo "unleash the sea ... lane 2 "
+
+./kallisto quant -i index_GRCh38_cdna_ncRNA -t 24 -o /users/sbi00/mw581/Documents/kallisto_linux-v0.43.1/hg19_mrna/st_results/RTC099 --single -l 100 -s 20 -b 5 /media/sdc/mw581/Projects/Steinhoff/Raw_data/lane2_barcode_RTC099.fastq
+
+./kallisto quant -i index_GRCh38_cdna_ncRNA -t 24 -o /users/sbi00/mw581/Documents/kallisto_linux-v0.43.1/hg19_mrna/st_results/RTC106 --single -l 100 -s 20 -b 5 /media/sdc/mw581/Projects/Steinhoff/Raw_data/lane2_barcode_RTC106.fastq
+
+./kallisto quant -i index_GRCh38_cdna_ncRNA -t 24 -o /users/sbi00/mw581/Documents/kallisto_linux-v0.43.1/hg19_mrna/st_results/RTC110 --single -l 100 -s 20 -b 5 /media/sdc/mw581/Projects/Steinhoff/Raw_data/lane2_barcode_RTC110.fastq
+
+./kallisto quant -i index_GRCh38_cdna_ncRNA -t 24 -o /users/sbi00/mw581/Documents/kallisto_linux-v0.43.1/hg19_mrna/st_results/RTC113 --single -l 100 -s 20 -b 5 /media/sdc/mw581/Projects/Steinhoff/Raw_data/lane2_barcode_RTC113.fastq
+
+./kallisto quant -i index_GRCh38_cdna_ncRNA -t 24 -o /users/sbi00/mw581/Documents/kallisto_linux-v0.43.1/hg19_mrna/st_results/RTC114 --single -l 100 -s 20 -b 5 /media/sdc/mw581/Projects/Steinhoff/Raw_data/lane2_barcode_RTC114.fastq
+
+./kallisto quant -i index_GRCh38_cdna_ncRNA -t 24 -o /users/sbi00/mw581/Documents/kallisto_linux-v0.43.1/hg19_mrna/st_results/RTC115 --single -l 100 -s 20 -b 5 /media/sdc/mw581/Projects/Steinhoff/Raw_data/lane2_barcode_RTC115.fastq
+
+./kallisto quant -i index_GRCh38_cdna_ncRNA -t 24 -o /users/sbi00/mw581/Documents/kallisto_linux-v0.43.1/hg19_mrna/st_results/RTC116 --single -l 100 -s 20 -b 5 /media/sdc/mw581/Projects/Steinhoff/Raw_data/lane2_barcode_RTC116.fastq
+
+echo " and the kraken ... lane 3 "
+
+./kallisto quant -i index_GRCh38_cdna_ncRNA -t 24 -o /users/sbi00/mw581/Documents/kallisto_linux-v0.43.1/hg19_mrna/st_results/RTC117 --single -l 100 -s 20 -b 5 /media/sdc/mw581/Projects/Steinhoff/Raw_data/lane3_barcode_RTC117.fastq
+
+./kallisto quant -i index_GRCh38_cdna_ncRNA -t 24 -o /users/sbi00/mw581/Documents/kallisto_linux-v0.43.1/hg19_mrna/st_results/RTC124 --single -l 100 -s 20 -b 5 /media/sdc/mw581/Projects/Steinhoff/Raw_data/lane3_barcode_RTC124.fastq
+
+./kallisto quant -i index_GRCh38_cdna_ncRNA -t 24 -o /users/sbi00/mw581/Documents/kallisto_linux-v0.43.1/hg19_mrna/st_results/RTC127 --single -l 100 -s 20 -b 5 /media/sdc/mw581/Projects/Steinhoff/Raw_data/lane3_barcode_RTC127.fastq
+
+./kallisto quant -i index_GRCh38_cdna_ncRNA -t 24 -o /users/sbi00/mw581/Documents/kallisto_linux-v0.43.1/hg19_mrna/st_results/RTC134 --single -l 100 -s 20 -b 5 /media/sdc/mw581/Projects/Steinhoff/Raw_data/lane3_barcode_RTC134.fastq
+
+./kallisto quant -i index_GRCh38_cdna_ncRNA -t 24 -o /users/sbi00/mw581/Documents/kallisto_linux-v0.43.1/hg19_mrna/st_results/RTC137 --single -l 100 -s 20 -b 5 /media/sdc/mw581/Projects/Steinhoff/Raw_data/lane3_barcode_RTC137.fastq
+
+./kallisto quant -i index_GRCh38_cdna_ncRNA -t 24 -o /users/sbi00/mw581/Documents/kallisto_linux-v0.43.1/hg19_mrna/st_results/RTC139 --single -l 100 -s 20 -b 5 /media/sdc/mw581/Projects/Steinhoff/Raw_data/lane3_barcode_RTC139.fastq
+
+./kallisto quant -i index_GRCh38_cdna_ncRNA -t 24 -o /users/sbi00/mw581/Documents/kallisto_linux-v0.43.1/hg19_mrna/st_results/RTC140 --single -l 100 -s 20 -b 5 /media/sdc/mw581/Projects/Steinhoff/Raw_data/lane3_barcode_RTC140.fastq
+
+echo " put it in a box again - end of analysis "
+
+
+
+
+
