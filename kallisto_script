@@ -1,15 +1,9 @@
-./kallisto index -i index /media/sdc/mw581/Projects/Steinhoff/Raw_data/mrna.fa
+ftp://ftp.ensembl.org/pub/
 
-./kallisto index -i index_GRCh38_cdna_ncRNA /users/sbi00/mw581/Documents/Salmon-0.8.2_linux_x86_64/index/Homo_sapiens.GRCh38.87.cdna.ncrna.fa
+cat Homo_sapiens.GRCh38.cdna.all.fa.gz Homo_sapiens.GRCh38.ncrna.fa.gz > Homo_sapiens.GRCh38.rna.fa.gz
+
+./kallisto index -i index_GRCh38_cdna_ncRNA /Homo_sapiens.GRCh38.87.cdna.ncrna.fa
 
 
 
-./kallisto quant -i index_hg19_mrna_e -t 24 -o /users/sbi00/mw581/Documents/kallisto_linux-v0.43.1/hg19_mrna/output --single -l 100 -s 20 /media/sdc/mw581/Projects/Steinhoff/Raw_data/lane2_barcode_RTC099.fastq
-
-./kallisto quant -i index_GRCh38_cdna_ncRNA -t 24 -o /users/sbi00/mw581/Documents/kallisto_linux-v0.43.1/hg19_mrna/output_RTC099 --single -l 100 -s 20 /media/sdc/mw581/Projects/Steinhoff/Raw_data/lane2_barcode_RTC099.fastq
-
-./kallisto quant -i index_GRCh38_cdna_ncRNA -t 24 -o /users/sbi00/mw581/Documents/kallisto_linux-v0.43.1/hg19_mrna/output_a_de21 --single -l 51 -s 20 /media/sdc/mw581/Projects/GB_XMAP/lexogene_data1710/a/DE21NGSUKBR101548_1.fq.gz
-
-./kallisto quant -i index_GRCh38_cdna_ncRNA -t 24 -o /users/sbi00/mw581/Documents/kallisto_linux-v0.43.1/hg19_mrna/output_globinex_de07 --single -l 51 -s 20 /media/sdc/mw581/Projects/GB_XMAP/scibio_data1707/DE07NGSUKBR100636_1.fq.gz
-
-./kallisto quant -i index_GRCh38_cdna_ncRNA -t 24 -o /users/sbi00/mw581/Documents/kallisto_linux-v0.43.1/hg19_mrna/output_RTC099 --single -l 100 -s 20 /media/sdc/mw581/Projects/Steinhoff/Raw_data/lane2_barcode_RTC099.fastq
+./kallisto quant -i index_hg19_mrna_e -t 8 -o hg19_mrna/output --single -l 100 -s 20 xxx.fastq
