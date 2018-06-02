@@ -1,9 +1,8 @@
+# Get your genome reference e.g. at:
 ftp://ftp.ensembl.org/pub/
-
+# Combine several datasets you need with:
 cat Homo_sapiens.GRCh38.cdna.all.fa.gz Homo_sapiens.GRCh38.ncrna.fa.gz > Homo_sapiens.GRCh38.rna.fa.gz
-
+# First index your previously build genome and build de-brujin graph
 ./kallisto index -i index_GRCh38_cdna_ncRNA /Homo_sapiens.GRCh38.87.cdna.ncrna.fa
-
-
-
+# Quantify your samples, -t number of threads, -l length of reads, -s number of overhang
 ./kallisto quant -i index_hg19_mrna_e -t 8 -o hg19_mrna/output --single -l 100 -s 20 xxx.fastq
