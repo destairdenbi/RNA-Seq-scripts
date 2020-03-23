@@ -1,6 +1,6 @@
 # de.STAIR RNA-Seq scripts
 
-Place for some of our scripts.
+Foo Place for some of our scripts.
 
 For an introduction to git you might want to explore a [Github tutorial](https://www.atlassian.com/git/tutorials/comparing-workflows)
 
